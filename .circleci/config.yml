@@ -6,11 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Move app do build dir
+          name: Move, Build & test
           command: |
             mv src /neopragma/src
-      - run:
-          name: Testing Sample
-          command: | 
+            ls -la /neopragma/src
+            ls -la /neopragma/src/main
+            ls -la /neopragma/src/main/cobol
             cd /neopragma
             ./run-examples
