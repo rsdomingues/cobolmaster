@@ -11,7 +11,20 @@ jobs:
             mv src/main /neopragma/src
             ls -la /neopragma/src/main/cobol
       - run:
-          name: Build & Test Program
+          name: Build & Test SAMPLE
           command: | 
             cd /neopragma
-            ./run-examples
+            echo 'Compiling ZUTZCPC'
+            ./compile ZUTZCPC 
+            echo 'Compiling SAMPLE'
+            ./compile SAMPLE
+            echo 'Testing Sample'
+            ./run-ut SAMPLEC SAMPLE SAMPLET
+      - run:
+          name: Build & Test FILEDEMO
+          command: | 
+            cd /neopragma
+            echo 'Compiling FILEDEMO'
+            ./compile FILEDEMO
+            echo 'Testing Sample'
+            ./run-ut FILEDEMC FILEDEMO FILEDEMT
