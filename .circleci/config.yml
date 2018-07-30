@@ -8,7 +8,7 @@ jobs:
       - run:
           name: Move app do build dir
           command: |
-            mv -r * /neopragma
+            mv src /neopragma/src
             cd /neopragma
       - run:
           name: Testing Sample
