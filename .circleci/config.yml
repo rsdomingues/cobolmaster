@@ -6,8 +6,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build Sample
-          command: ls -la .
+          name: Move app do build dir
+          command: |
+            mv -r * /neopragma
+            cd /neopragma
       - run:
           name: Testing Sample
-          command: ls -la /neopragma/src
+          command: ./run-examples
