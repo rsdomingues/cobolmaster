@@ -24,7 +24,7 @@ jobs:
           name: Build & Test FILEDEMO
           command: | 
             cd /neopragma
-            echo 'Compiling FILEDEMO'
+            echo 'Compiling FILEDEMO '
             ./compile FILEDEMO
             echo 'Testing Sample'
             ./run-ut FILEDEMC FILEDEMO FILEDEMT
