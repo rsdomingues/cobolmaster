@@ -9,7 +9,7 @@ jobs:
           name: Move, Build & test
           command: |
             ls -la /neopragma/src
-            mv src /neopragma/src
+            mv src/main /neopragma/src
             ls -la /neopragma/src
             cd /neopragma
             ls -la
