@@ -10,7 +10,8 @@ jobs:
           command: |
             ls -la /neopragma/src
             mv src /neopragma/src
-            ls -la /neopragma/src/main
-            ls -la /neopragma/src/main/cobol
+            ls -la /neopragma/src
             cd /neopragma
-            ./run-examples
+            ls -la
+            cd ./src
+            ls -la
