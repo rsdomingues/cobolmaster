@@ -8,8 +8,8 @@ jobs:
       - run:
           name: Move, Build & test
           command: |
-            mv src /neopragma/src
             ls -la /neopragma/src
+            mv src /neopragma/src
             ls -la /neopragma/src/main
             ls -la /neopragma/src/main/cobol
             cd /neopragma
